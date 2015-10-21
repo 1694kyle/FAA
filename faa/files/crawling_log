@@ -1,0 +1,351 @@
+2015-10-16 09:53:28 [scrapy] ERROR: Spider error processing <GET https://www.faa.gov//regulations_policies/advisory_circulars/index.cfm/go/document.information/documentID/74286> (referer: https://www.faa.gov/regulations_policies/advisory_circulars/index.cfm/go/document.list?omni=ACs&q=00-25&display=current&parentTopicID=0&documentNumber=)
+Traceback (most recent call last):
+  File "C:\Anaconda32\envs\faa\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Anaconda32\envs\faa\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "C:\Anaconda32\envs\faa\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Anaconda32\envs\faa\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Anaconda32\envs\faa\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\kbonnet\PycharmProjects\cwest\faa\faa\faa\spiders\ac_spider_pandas.py", line 97, in process_document_page
+    item['row']['output_folder'] = os.path.join(settings.AC_DOCUMENT_FOLDER, 'Other', sub_folder, item['row']['office'])
+  File "C:\Anaconda32\envs\faa\lib\ntpath.py", line 67, in join
+    p_drive, p_path = splitdrive(p)
+  File "C:\Anaconda32\envs\faa\lib\ntpath.py", line 115, in splitdrive
+    if len(p) > 1:
+TypeError: object of type 'float' has no len()
+2015-10-16 09:53:30 [scrapy] WARNING: Dropped: No download for 22948
+{'row': number                                                       39-1A
+change                                                           0
+office                                                     AFS-340
+title            JIG Fixtures; Replacement of Wing Attach Angle...
+date                                           1970-03-05 00:00:00
+search_number                                                39-1A
+file_number                                                  39-1A
+url              https://www.faa.gov//regulations_policies/advi...
+document_id                                                  22948
+document_link                                                     
+relevant                                                     False
+output_folder    I:\FAA Guidance\Advisory Circulars\Other\AFS\A...
+updated                                                      False
+Name: 761, dtype: object}
+2015-10-16 09:54:09 [scrapy] WARNING: Dropped: No download for 22592
+{'row': number                                                       43-15
+change                                                           0
+office                                                     AFS-350
+title                  Recommended Guidelines for Instrument Shops
+date                                           1977-08-15 00:00:00
+search_number                                                43-15
+file_number                                                  43-15
+url              https://www.faa.gov//regulations_policies/advi...
+document_id                                                  22592
+document_link                                                     
+relevant                                                     False
+output_folder    I:\FAA Guidance\Advisory Circulars\Other\AFS\A...
+updated                                                      False
+Name: 721, dtype: object}
+2015-10-16 09:54:10 [scrapy] WARNING: Dropped: No download for 22416
+{'row': number                                                       91-48
+change                                                           0
+office                                                     AFS-820
+title                   Acrobatics-Precision Flying with a Purpose
+date                                           1977-06-29 00:00:00
+search_number                                                91-48
+file_number                                                  91-48
+url              https://www.faa.gov//regulations_policies/advi...
+document_id                                                  22416
+document_link                                                     
+relevant                                                     False
+output_folder    I:\FAA Guidance\Advisory Circulars\Other\AFS\A...
+updated                                                      False
+Name: 722, dtype: object}
+2015-10-16 09:54:13 [scrapy] WARNING: Dropped: No download for 23163
+{'row': number                                                       91-46
+change                                                           0
+office                                                     AFS-350
+title            Gyroscopic Instruments - Good Operating Practices
+date                                           1977-02-04 00:00:00
+search_number                                                91-46
+file_number                                                  91-46
+url              https://www.faa.gov//regulations_policies/advi...
+document_id                                                  23163
+document_link                                                     
+relevant                                                     False
+output_folder    I:\FAA Guidance\Advisory Circulars\Other\AFS\A...
+updated                                                      False
+Name: 729, dtype: object}
+2015-10-16 09:54:17 [scrapy] WARNING: Dropped: No download for 22635
+{'row': number                                                      61-47A
+change                                                           0
+office                                                     AFS-820
+title            Use of Approach Slope Indicators for Pilot Tra...
+date                                           1979-03-26 00:00:00
+search_number                                               61-47A
+file_number                                                 61-47A
+url              https://www.faa.gov//regulations_policies/advi...
+document_id                                                  22635
+document_link                                                     
+relevant                                                     False
+output_folder    I:\FAA Guidance\Advisory Circulars\Other\AFS\A...
+updated                                                      False
+Name: 710, dtype: object}
+2015-10-16 09:54:21 [scrapy] WARNING: Dropped: No download for 22421
+{'row': number                                                       91-54
+change                                                           0
+office                                                     AFS-820
+title            Automatic Reporting Systems Altimeter Setting ...
+date                                           1979-02-26 00:00:00
+search_number                                                91-54
+file_number                                                  91-54
+url              https://www.faa.gov//regulations_policies/advi...
+document_id                                                  22421
+document_link                                                     
+relevant                                                     False
+output_folder    I:\FAA Guidance\Advisory Circulars\Other\AFS\A...
+updated                                                      False
+Name: 711, dtype: object}
+2015-10-16 09:54:30 [scrapy] WARNING: Dropped: No download for 22761
+{'row': number                                                      120-39
+change                                                           0
+office                                                     AFS-331
+title            Hazards of Waste Water Ice Accumulation Separa...
+date                                           1980-10-31 00:00:00
+search_number                                               120-39
+file_number                                                 120-39
+url              https://www.faa.gov//regulations_policies/advi...
+document_id                                                  22761
+document_link                                                     
+relevant                                                     False
+output_folder    I:\FAA Guidance\Advisory Circulars\Other\AFS\A...
+updated                                                      False
+Name: 697, dtype: object}
+2015-10-16 09:56:15 [scrapy] WARNING: Dropped: No download for 22434
+{'row': number                                                       91-66
+change                                                           0
+office                                                     AFS-840
+title                              Noise Abatement for Helicopters
+date                                           1987-06-04 00:00:00
+search_number                                                91-66
+file_number                                                  91-66
+url              https://www.faa.gov//regulations_policies/advi...
+document_id                                                  22434
+document_link                                                     
+relevant                                                     False
+output_folder    I:\FAA Guidance\Advisory Circulars\Other\AFS\A...
+updated                                                      False
+Name: 638, dtype: object}
+2015-10-16 09:56:20 [scrapy] WARNING: Dropped: No download for 22317
+{'row': number                                                    23.562-1
+change                                                           0
+office                                                     ACE-111
+title            Dynamic Testing of Part 23 Airplane Seat/Restr...
+date                                           1989-06-22 00:00:00
+search_number                                             23.562-1
+file_number                                               23.562-1
+url              https://www.faa.gov//regulations_policies/advi...
+document_id                                                  22317
+document_link                                                     
+relevant                                                     False
+output_folder    I:\FAA Guidance\Advisory Circulars\Other\ACE\A...
+updated                                                      False
+Name: 620, dtype: object}
+2015-10-16 09:57:01 [scrapy] WARNING: Dropped: No download for 22436
+{'row': number                                                       91-68
+change                                                           0
+office                                                     AFS-820
+title            Pilot Qualification and Operation of all Surpl...
+date                                           1992-02-25 00:00:00
+search_number                                                91-68
+file_number                                                  91-68
+url              https://www.faa.gov//regulations_policies/advi...
+document_id                                                  22436
+document_link                                                     
+relevant                                                     False
+output_folder    I:\FAA Guidance\Advisory Circulars\Other\AFS\A...
+updated                                                      False
+Name: 597, dtype: object}
+2015-10-16 09:57:18 [scrapy] WARNING: Dropped: No download for 74365
+{'row': number                                                       23-10
+change                                                           0
+office                                                     ACE-111
+title            Auxiliary Fuel Systems for Reciprocating and T...
+date                                           1991-08-05 00:00:00
+search_number                                                23-10
+file_number                                                  23-10
+url              https://www.faa.gov//regulations_policies/advi...
+document_id                                                  74365
+document_link                                                     
+relevant                                                     False
+output_folder    I:\FAA Guidance\Advisory Circulars\Other\ACE\A...
+updated                                                      False
+Name: 601, dtype: object}
+2015-10-16 09:57:53 [scrapy] WARNING: Dropped: No download for 22091
+{'row': number                                                       23-14
+change                                                           0
+office                                                     ACE-100
+title            Type Certification Basis for Conversion from R...
+date                                           1993-09-30 00:00:00
+search_number                                                23-14
+file_number                                                  23-14
+url              https://www.faa.gov//regulations_policies/advi...
+document_id                                                  22091
+document_link                                                     
+relevant                                                     False
+output_folder    I:\FAA Guidance\Advisory Circulars\Other\ACE\A...
+updated                                                      False
+Name: 577, dtype: object}
+2015-10-16 09:58:56 [scrapy] WARNING: Dropped: No download for 22282
+{'row': number                                                  23.1521-1B
+change                                                           0
+office                                                     ACE-111
+title            Type Certification of Automobile Gasoline in P...
+date                                           1995-03-02 00:00:00
+search_number                                           23.1521-1B
+file_number                                             23.1521-1B
+url              https://www.faa.gov//regulations_policies/advi...
+document_id                                                  22282
+document_link                                                     
+relevant                                                     False
+output_folder    I:\FAA Guidance\Advisory Circulars\Other\ACE\A...
+updated                                                      False
+Name: 562, dtype: object}
+2015-10-16 09:58:57 [scrapy] WARNING: Dropped: No download for 22900
+{'row': number                                                      61-126
+change                                                           0
+office                                                     AFS-840
+title            Qualification and Approval of Personal Compute...
+date                                           1997-05-12 00:00:00
+search_number                                               61-126
+file_number                                                 61-126
+url              https://www.faa.gov//regulations_policies/advi...
+document_id                                                  22900
+document_link                                                     
+relevant                                                     False
+output_folder    I:\FAA Guidance\Advisory Circulars\Other\AFS\A...
+updated                                                      False
+Name: 547, dtype: object}
+2015-10-16 09:59:02 [scrapy] ERROR: Error processing {'row': number                                                     00.44II
+change                                                           0
+office                                                     AGC-200
+title                       Status of Federal Aviation Regulations
+date                                           1997-05-01 00:00:00
+search_number                                              00.44II
+file_number                                                00.44II
+url              https://www.faa.gov//regulations_policies/advi...
+document_id                                                  22288
+document_link    http://rgl.faa.gov/Regulatory_and_Guidance_Lib...
+relevant                                                     False
+output_folder    I:\FAA Guidance\Advisory Circulars\Other\AGC\A...
+updated                                                      False
+Name: 549, dtype: object}
+Traceback (most recent call last):
+  File "C:\Anaconda32\envs\faa\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\kbonnet\PycharmProjects\cwest\faa\faa\faa\pipelines.py", line 39, in process_item
+    document = urllib2.urlopen(item['row']['document_link'])
+  File "C:\Anaconda32\envs\faa\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Anaconda32\envs\faa\lib\urllib2.py", line 437, in open
+    response = meth(req, response)
+  File "C:\Anaconda32\envs\faa\lib\urllib2.py", line 550, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "C:\Anaconda32\envs\faa\lib\urllib2.py", line 475, in error
+    return self._call_chain(*args)
+  File "C:\Anaconda32\envs\faa\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "C:\Anaconda32\envs\faa\lib\urllib2.py", line 558, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 400: Bad Request
+2015-10-16 09:59:40 [scrapy] WARNING: Dropped: No download for 22061
+{'row': number                                                     21.25-1
+change                                                           0
+office                                                     ACE-111
+title            Issuance of Type Certificate: Restricted Categ...
+date                                           1997-12-01 00:00:00
+search_number                                              21.25-1
+file_number                                                21.25-1
+url              https://www.faa.gov//regulations_policies/advi...
+document_id                                                  22061
+document_link                                                     
+relevant                                                     False
+output_folder    I:\FAA Guidance\Advisory Circulars\Other\ACE\A...
+updated                                                      False
+Name: 537, dtype: object}
+2015-10-16 09:59:44 [scrapy] WARNING: Dropped: No download for 22437
+{'row': number                                                      91-69A
+change                                                           0
+office                                                     AFS-820
+title                    Seaplane Safety for FAR Part 91 Operators
+date                                           1999-11-19 00:00:00
+search_number                                               91-69A
+file_number                                                 91-69A
+url              https://www.faa.gov//regulations_policies/advi...
+document_id                                                  22437
+document_link                                                     
+relevant                                                     False
+output_folder    I:\FAA Guidance\Advisory Circulars\Other\AFS\A...
+updated                                                      False
+Name: 520, dtype: object}
+2015-10-16 09:59:44 [scrapy] WARNING: Dropped: No download for 22932
+{'row': number                                                     33.78-1
+change                                                           0
+office                                                     ANE-110
+title            Turbine Engine Power-Loss and Instability in E...
+date                                           2000-02-08 00:00:00
+search_number                                              33.78-1
+file_number                                                33.78-1
+url              https://www.faa.gov//regulations_policies/advi...
+document_id                                                  22932
+document_link                                                     
+relevant                                                     False
+output_folder    I:\FAA Guidance\Advisory Circulars\Other\ANE\A...
+updated                                                      False
+Name: 519, dtype: object}
+2015-10-16 10:00:24 [scrapy] WARNING: Dropped: No download for 1028369
+{'row': number                                                      21-43A
+change                                                         NaN
+office                                                     AIR-110
+title            Production Under 14 CFR Part 21,Subparts F, G,...
+date                                           2015-10-01 00:00:00
+search_number                                               21-43A
+file_number                                                 21-43A
+url              https://www.faa.gov//regulations_policies/advi...
+document_id                                                1028369
+document_link                                                     
+relevant                                                     False
+output_folder    I:\FAA Guidance\Advisory Circulars\Other\AIR\A...
+updated                                                      False
+Name: 3, dtype: object}
+2015-10-16 10:00:30 [scrapy] WARNING: Dropped: No download for 1028370
+{'row': number                                                       45-2E
+change                                                         NaN
+office                                                     AIR-100
+title                      Identification and Registration Marking
+date                                           2015-10-01 00:00:00
+search_number                                                45-2E
+file_number                                                  45-2E
+url              https://www.faa.gov//regulations_policies/advi...
+document_id                                                1028370
+document_link                                                     
+relevant                                                     False
+output_folder    I:\FAA Guidance\Advisory Circulars\Other\AIR\A...
+updated                                                      False
+Name: 5, dtype: object}
+2015-10-16 10:01:03 [scrapy] WARNING: Dropped: No download for 1019199
+{'row': number                                                 150/5300-19
+change                                                         NaN
+office                                                     AAS-100
+title                         Airport Data and Information Program
+date                                           2015-09-30 00:00:00
+search_number                                        150%2F5300-19
+file_number                                            150_5300-19
+url              https://www.faa.gov//regulations_policies/advi...
+document_id                                                1019199
+document_link                                                     
+relevant                                                      True
+output_folder    I:\FAA Guidance\Advisory Circulars\Airport Saf...
+updated                                                      False
+Name: 8, dtype: object}

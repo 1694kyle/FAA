@@ -1,0 +1,6 @@
+Accept-Language: en
+Accept-Encoding: gzip,deflate
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Scrapy/1.0.3 (+http://scrapy.org)
+Cookie: AkamaiEdge=true; BIGipServerpool_prd_www.faa.gov_tr_http=1824699035.20480.0000; JSESSIONID=7B206248654753BC8910A1D0AE1FA605.www
+Referer: https://www.faa.gov/regulations_policies/advisory_circulars/index.cfm/go/document.list?omni=ACs&q=91-73B&display=current&parentTopicID=0&documentNumber=
